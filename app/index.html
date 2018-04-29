@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <!-- Our meta data -->
+
   <meta charset="utf-8">
   <meta name="description" content="A project using angularjs with the Monkees as inspiration">
   <meta name="author" content="Daniel Deiana">
@@ -11,8 +11,8 @@
 
   <title>Monkees</title>
 
-  <!--Load styles-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
 
   <!--Load angular-->
@@ -20,12 +20,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 
   <!--Our angular app-->
+  <script src="services/dates/dates.js"></script>
+  <script src="components/dates/dates.js"></script>
   <script src="app.js"></script>
+
 </head>
 
 <body ng-app="monkees">
+  <h1>Monkees Bandpage</h1>
+  <nav>
+    <a href="/dates">dates</a>
+  </nav>
   <div ui-view>
-      <h1>Monkees Bandpage</h1>
   </div>
 </body>
 </html>

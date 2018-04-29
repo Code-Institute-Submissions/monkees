@@ -15,12 +15,21 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+        // angular dependencies
         './node_modules/angular/angular.js',
         './node_modules/angular-ui-router/release/angular-ui-router.js',
         './node_modules/angular-mocks/angular-mocks.js',
+
+        // angular-app files
         './app/services/dates/dates.js',
+        './app/services/facts/facts.js',
+        './app/components/dates/dates.js',
         './app/app.js',
+
+        // angular-spec files
         './app/services/dates/dates.spec.js',
+        './app/services/facts/facts.spec.js',
+        './app/components/dates/dates.spec.js',
     ],
 
 

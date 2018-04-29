@@ -2,9 +2,11 @@
   'use strict';
 
   angular.module('monkees', [
-    'ui.router'
+    'ui.router',
+    'api.dates',
+    'components.dates',
   ])
   .config(function($urlRouterProvider) {
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("/dates");
   });
 })();
