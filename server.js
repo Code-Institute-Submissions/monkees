@@ -23,4 +23,4 @@ app.get('*', function(req, res) {
 });
 
 app.listen(8080);
-console.log('meet-irl is running on 8080');
+console.log('Monkees is running on 8080');

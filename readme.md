@@ -11,7 +11,7 @@ To invoke karma, install the karma cli: `npm install -g karma-cli`
 
 Enter `nodemon server.js` to run the server then visit [localhost:8080](http://localhost:8080)
 
-Enter `start karma` to run the tests. (make sure the karma cli is installed, see above)
+Enter `karma start` to run the tests. (make sure the karma cli is installed, see above)
 
 ## Inspiration
 
