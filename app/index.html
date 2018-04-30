@@ -22,6 +22,7 @@
   <!--Our angular app-->
   <script src="services/dates/dates.js"></script>
   <script src="components/dates/dates.js"></script>
+  <script src="components/home/home.js"></script>
   <script src="app.js"></script>
 
 </head>
@@ -29,6 +30,7 @@
 <body ng-app="monkees">
   <h1>Monkees Bandpage</h1>
   <nav>
+    <a ui-sref="home">home</a>
     <a ui-sref="dates">dates</a>
   </nav>
   <div ui-view>
