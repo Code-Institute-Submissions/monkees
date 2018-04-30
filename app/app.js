@@ -7,6 +7,6 @@
     'components.dates',
   ])
   .config(function($urlRouterProvider) {
-    $urlRouterProvider.otherwise("/dates");
+    $urlRouterProvider.otherwise("/");
   });
 })();

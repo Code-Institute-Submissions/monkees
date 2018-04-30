@@ -21,12 +21,14 @@ module.exports = function(config) {
         './node_modules/angular-mocks/angular-mocks.js',
 
         // angular-app files
+        './app/components/home/home.js',
         './app/services/dates/dates.js',
         './app/services/facts/facts.js',
         './app/components/dates/dates.js',
         './app/app.js',
 
         // angular-spec files
+        './app/components/home/home.spec.js',
         './app/services/dates/dates.spec.js',
         './app/services/facts/facts.spec.js',
         './app/components/dates/dates.spec.js',
