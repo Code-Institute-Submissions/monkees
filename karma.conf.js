@@ -25,13 +25,21 @@ module.exports = function(config) {
         './app/services/facts/facts.js',
         './app/components/dates/dates.js',
         './app/components/home/home.js',
+        './app/components/music/music.js',
+        './app/components/contact/contact.js',
+        './app/components/about/about.js',
+        './app/components/photos/photos.js',
         './app/app.js',
 
         // angular-spec files
         './app/components/home/home.spec.js',
+        './app/components/dates/dates.spec.js',
+        './app/components/music/music.spec.js',
+        './app/components/contact/contact.spec.js',
+        './app/components/about/about.spec.js',
+        './app/components/photos/photos.spec.js',
         './app/services/dates/dates.spec.js',
         './app/services/facts/facts.spec.js',
-        './app/components/dates/dates.spec.js',
     ],
 
 
