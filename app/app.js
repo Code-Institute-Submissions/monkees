@@ -6,6 +6,7 @@
     'api.dates',
     'components.dates',
     'components.home',
+    'components.music',
   ])
   .config(function($urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
