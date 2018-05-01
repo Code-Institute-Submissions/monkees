@@ -4,6 +4,7 @@
     angular.module('components.about', [])
     .controller('AboutController', function(){
         var vm = this; // view model
+
     })
     .config(function($stateProvider){
         $stateProvider

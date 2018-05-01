@@ -2,8 +2,16 @@
     'use strict';
 
     angular.module('components.contact', [])
-    .controller('ContactController', function(){
+    .controller('ContactController', function($state){
         var vm = this; // view model
+
+        vm.formSubmit = function(){
+            if(vm.contactForm.$valid){
+                alert("Your form has been sent successfully!");
+                $state.go('home');
+            };
+        };
+
     })
     .config(function($stateProvider){
         $stateProvider
