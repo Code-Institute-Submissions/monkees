@@ -23,6 +23,7 @@ module.exports = function(config) {
         // angular-app files
         './app/services/dates/dates.js',
         './app/services/facts/facts.js',
+        './app/services/members/members.js',
         './app/components/dates/dates.js',
         './app/components/home/home.js',
         './app/components/music/music.js',
@@ -40,6 +41,7 @@ module.exports = function(config) {
         './app/components/photos/photos.spec.js',
         './app/services/dates/dates.spec.js',
         './app/services/facts/facts.spec.js',
+        './app/services/members/members.spec.js',
     ],
 
 

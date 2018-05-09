@@ -6,27 +6,27 @@
 <div class="row">
 	<form name="cc.contactForm" ng-submit="cc.formSubmit()" class="col-sm-6">
 		<div class="form-group">
-			<input type="name" class="form-control" placeholder="Your Name" ng-model="quoteForm.name" required/>
+			<input type="name" class="form-control" placeholder="Your Name" ng-model="contactForm.name" required/>
 		</div>
 
 		<div class="form-group">
-			<input type="email" class="form-control" placeholder="Your Email" ng-model="quoteForm.email" required>
+			<input type="email" class="form-control" placeholder="Your Email" ng-model="contactForm.email" required>
 		</div>
 
 		<div class="form-group">
-			<input type="phone" class="form-control" placeholder="Your Phone-number" ng-model="quoteForm.number">
+			<input type="phone" class="form-control" placeholder="Your Phone-number" ng-model="contactForm.number">
 		</div>
 
 		<div class="form-group">
-			<input type="date" class="form-control" placeholder="Event date" date-format="dd/MM/yyyy" ng-model="quoteForm.date" required>
+			<input type="date" class="form-control" placeholder="Event date" date-format="dd/MM/yyyy" ng-model="contactForm.date" required>
 		</div>
 
 		<div class="form-group">
-			<input type="location" class="form-control" placeholder="Event Location" ng-model="quoteForm.location" required>
+			<input type="location" class="form-control" placeholder="Event Location" ng-model="contactForm.location" required>
 		</div>
 
 		<div class="form-group">
-			<textarea type="text" class="form-control" placeholder="Event type/information" ng-model="quoteForm.info"></textarea>
+			<textarea type="text" class="form-control" placeholder="Event type/information" ng-model="contactForm.info"></textarea>
 		</div>
 
 		<button type="submit" class="btn">Submit</button>
@@ -35,11 +35,11 @@
 
 	<section class="details-box col-sm-6">
 		<h2>My details</h2>
-		<p>Name: {{ quoteForm.name }}</p>
-		<p>Email: {{ quoteForm.email }}</p>
-		<p>Phone-number: {{ quoteForm.number }}</p>
-		<p>Event date: {{ quoteForm.date }}</p>
-		<p>Event location: {{ quoteForm.location }}</p>
-		<p>Name additional info: {{ quoteForm.info }}</p>
+		<p>Name: {{ contactForm.name }}</p>
+		<p>Email: {{ contactForm.email }}</p>
+		<p>Phone-number: {{ contactForm.number }}</p>
+		<p>Event date: {{ contactForm.date }}</p>
+		<p>Event location: {{ contactForm.location }}</p>
+		<p>Name additional info: {{ contactForm.info }}</p>
 	</section>
 </div>

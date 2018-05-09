@@ -1,7 +1,5 @@
 <h2>About the Monkees</h2>
 
-// test
-
 <section>
     <p>
     The Monkees are a rock/pop group formed in 1965 to compliment an American situation comedy sitcom by the same name.
@@ -21,9 +19,8 @@
 
 <section>
     <h2>Members</h2>
-    <h3>Peter Tork</h3>
-    <h3>Micky Dolenz</h3>
-    <h3>Davy Jones</h3>
-    <h3>Michael Nesmith</h3>
+    <div ng-repeat="member in ac.members">
+        <h3>{{ member.name }}</h3>
+    </div>
 </section>
 

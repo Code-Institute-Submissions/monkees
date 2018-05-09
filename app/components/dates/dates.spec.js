@@ -44,7 +44,6 @@ describe('DatesController', function(){
             return datesList;
         });
 
-
         // Create instance of DatesController and set to namesake variable
         DatesController = $controller('DatesController', {Dates: DatesFactory});
     }));

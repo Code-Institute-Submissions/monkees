@@ -4,6 +4,8 @@
   angular.module('monkees', [
     'ui.router',
     'api.dates',
+    'api.facts',
+    'api.members',
     'components.dates',
     'components.home',
     'components.music',

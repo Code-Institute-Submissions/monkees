@@ -2,9 +2,10 @@
     'use strict';
 
     angular.module('components.about', [])
-    .controller('AboutController', function(){
+    .controller('AboutController', function(Members){
         var vm = this; // view model
 
+        vm.members = Members.all();
     })
     .config(function($stateProvider){
         $stateProvider
