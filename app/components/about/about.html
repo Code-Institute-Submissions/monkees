@@ -21,6 +21,17 @@
     <h2>Members</h2>
     <div ng-repeat="member in ac.members">
         <h3>{{ member.name }}</h3>
+        <ul>
+            <li><span>Born: </span>{{ member.born }}</li>
+            <li>Instruments: </li>
+            <div ng-repeat="instrument in member.instruments">
+                <ul>
+                    <li>{{ instrument }}</li>    
+                </ul>
+            </div>
+            <li><span>Website: </span><a href="{{ member.website }}">{{ member.website }}</a></li>
+            <li><span>Wikipedia: </span><a href="{{ member.wikipedia }}">{{ member.wikipedia }}</a></li>
+        </ul>
     </div>
 </section>
 
