@@ -16,6 +16,6 @@ Enter `karma start` to run the tests. (make sure the karma cli is installed, see
 
 ## Inspiration
 
-Using a test driven approach and followed the same set up as
+Using a test driven approach and followed the same setup as
 [Adam Morgan](https://twitter.com/atommorgan):
 [Testing AngularJS with Jasmine and Karma](https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1)

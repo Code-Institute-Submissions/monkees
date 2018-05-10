@@ -21,6 +21,7 @@
     <h2>Members</h2>
     <div ng-repeat="member in ac.members">
         <h3>{{ member.name }}</h3>
+        <img ng-src="{{ member.image }}" alt="A picture of {{ member.name }}" width=300>
         <ul>
             <li><span>Born: </span>{{ member.born }}</li>
             <li>Instruments: </li>
