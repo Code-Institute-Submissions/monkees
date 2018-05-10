@@ -20,6 +20,11 @@
             return factsList;
         };
 
+        Facts.randomFact = function(factsList){
+            var i = Math.floor(Math.random() * factsList.length);
+            return factsList[i];
+        };
+
         return Facts;
 
     });

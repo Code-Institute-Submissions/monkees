@@ -34,4 +34,17 @@ describe('Facts factory', function(){
             expect(Facts.all()).toEqual(factsList);
         });
     });
+
+    describe("The .randomFact method", function(){
+
+        it('should exist', function(){
+            expect(Facts.randomFact).toBeDefined();
+        });
+
+        it("should return a random fact in the factsList", function(){
+            var fact = Facts.randomFact(factsList);
+            expect(factsList.includes(fact)).toBeTruthy();
+        });
+    });
+
 });
