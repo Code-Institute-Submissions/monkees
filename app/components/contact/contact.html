@@ -4,7 +4,7 @@
     <p>Set your event alight with a live performance from the Monkees! Fill out the form and get a quote.</p>
 </section>
 <div class="row">
-	<form name="cc.contactForm" ng-submit="cc.formSubmit()" class="col-sm-6">
+	<form name="cc.contactForm" ng-submit="cc.formSubmit()">
 		<div class="form-group">
 			<input type="name" class="form-control" placeholder="Your Name" ng-model="contactForm.name" required/>
 		</div>
@@ -32,14 +32,4 @@
 		<button type="submit" class="btn">Submit</button>
 
 	</form>
-
-	<section class="details-box col-sm-6">
-		<h2>My details</h2>
-		<p>Name: {{ contactForm.name }}</p>
-		<p>Email: {{ contactForm.email }}</p>
-		<p>Phone-number: {{ contactForm.number }}</p>
-		<p>Event date: {{ contactForm.date }}</p>
-		<p>Event location: {{ contactForm.location }}</p>
-		<p>Name additional info: {{ contactForm.info }}</p>
-	</section>
 </div>

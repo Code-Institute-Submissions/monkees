@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="A project using angularjs with the Monkees as inspiration">
+  <meta name="author" content="Daniel Deiana">
+
+  <!-- for surge href="app/" -->
+  <base href="/">
+
+  <title>Monkees</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+
+  <!--Load angular-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+
+  <!--Our angular app-->
+  <script src="services/dates/dates.js"></script>
+  <script src="services/facts/facts.js"></script>
+  <script src="services/members/members.js"></script>
+  <script src="components/dates/dates.js"></script>
+  <script src="components/home/home.js"></script>
+  <script src="components/music/music.js"></script>
+  <script src="components/contact/contact.js"></script>
+  <script src="components/about/about.js"></script>
+  <script src="components/photos/photos.js"></script>
+  <script src="app.js"></script>
+
+</head>
+
+<body ng-app="monkees">
+  <h1>Monkees Bandpage</h1>
+  <nav>
+    <a ui-sref="home">home</a>
+    <a ui-sref="dates">dates</a>
+    <a ui-sref="music">music</a>
+    <a ui-sref="contact">contact</a>
+    <a ui-sref="about">about</a>
+    <a ui-sref="photos">photos</a>
+  </nav>
+  <div ui-view>
+  </div>
+</body>
+</html>
