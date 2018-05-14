@@ -1,14 +1,22 @@
 {
   "name": "monkees",
   "version": "1.0.0",
-  "description": "",
+  "description": "Deployed with surge to: [https://monkees.surge.sh](https://monkees.surge.sh)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldeiana/monkees.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieldeiana/monkees/issues"
+  },
+  "homepage": "https://github.com/danieldeiana/monkees#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
@@ -16,13 +24,13 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "@uirouter/angularjs": "^1.0.3",
-    "angular": "^1.6.10",
-    "angular-mocks": "^1.6.10",
+    "angular": "^1.7.0",
+    "angular-mocks": "^1.7.0",
+    "angular-ui-router": "^1.0.3",
     "jasmine-core": "^3.1.0",
     "karma": "^2.0.2",
     "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^1.1.1",
+    "karma-jasmine": "^1.1.2",
     "karma-spec-reporter": "0.0.32"
   }
 }
