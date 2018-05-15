@@ -2,9 +2,17 @@
 Deployed with surge to: [https://monkees.surge.sh](https://monkees.surge.sh)
 
 ## Get it running on your machine
-
+In your chosen directory run `git clone https://github.com/danieldeiana/monkees.git`
+[https://nodejs.org/en/](Install Node)
+Use 5.0: `nvm use 5.0`
+Verify version and check installed: `nvm --version`
 To install dependencies, `cd` to the folder where package.json lies and enter `npm install` .
-To invoke karma, install the karma cli: `npm install -g karma-cli`
+
+To run in local browser install nodemon: `npm install -g nodemon`
+Verify installed: `nodemon --version`
+
+If you want to run the tests install the karma cli: `npm install -g karma-cli`
+Verify installed: `karma --version`
 
 ## Terminal Commands
 
@@ -13,6 +21,7 @@ To invoke karma, install the karma cli: `npm install -g karma-cli`
 Enter `nodemon server.js` to run the server then visit [localhost:8080](http://localhost:8080)
 
 Enter `karma start` to run the tests. (make sure the karma cli is installed, see above)
+Test results will be shown in the terminal.
 
 ## Inspiration
 
