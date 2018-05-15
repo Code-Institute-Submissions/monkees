@@ -1,7 +1,7 @@
 <h2>Dates</h2>
-<div ng-repeat="date in dc.dates">
+<div ng-repeat="date in dc.dates | orderBy:'-date'">
     <h2>{{ date.venue }}</h2>
-    <p>{{ date.date }}</p>
+    <p>{{ date.date | date:'dd LLLL yyyy' }}</p>
     <p>{{ date.city }}</p>
     <p>{{ date.country }}</p>
 </div>
