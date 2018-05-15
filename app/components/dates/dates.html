@@ -1,13 +1,19 @@
 <h2>Dates</h2>
-<div ng-if="dc.orderBy == '-date'">
-    <button ng-click="dc.orderBy = 'date'">By earliest</button>
-</div>
-<div ng-if="dc.orderBy == 'date'">
+<div id='date-filter'>
+    <!-- Only show the relevent button-->
+    <h3>Filter shows</h3>
+    <div ng-if="dc.orderBy == '-date'">
+        <button ng-click="dc.orderBy = 'date'">By earliest</button>
+    </div>
+    <div ng-if="dc.orderBy == 'date'">
         <button ng-click="dc.orderBy = '-date'">By latest</button>
+    </div>
+    <label>Filter country <input ng-model="search.country"></label>
+    <label>Filter city <input ng-model="search.city"></label>
 </div>
-<div ng-repeat="date in dc.dates | orderBy: dc.orderBy">
-    <h2>{{ date.venue }}</h2>
-    <p>{{ date.date | date:'dd LLLL yyyy' }}</p>
-    <p>{{ date.city }}</p>
-    <p>{{ date.country }}</p>
+<div ng-repeat="date in dc.dates | orderBy: dc.orderBy | filter:search">
+    <h4>{{ date.venue }}</h4>
+    <p><strong>Date: </strong>{{ date.date | date:'dd LLLL yyyy' }}</p>
+    <p><strong>City: </strong>{{ date.city }}</p>
+    <p><strong>Country: </strong>{{ date.country }}</p>
 </div>
