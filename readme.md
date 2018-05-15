@@ -4,7 +4,7 @@ Deployed with surge to: [https://monkees.surge.sh](https://monkees.surge.sh)
 ## Get it running on your machine
 ### Install local dependencies
 * In your chosen directory run `git clone https://github.com/danieldeiana/monkees.git`
-* [https://nodejs.org/en/](Install Node)
+* [Install Node](https://nodejs.org/en/)
 * Use 5.0: `nvm use 5.0`
 * Verify version and check installed: `nvm --version`
 * To install dependencies, `cd` to the folder where package.json lies and enter `npm install` .
