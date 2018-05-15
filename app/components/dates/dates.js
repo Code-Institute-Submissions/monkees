@@ -6,6 +6,8 @@
         var vm = this; // view model
 
         vm.dates = Dates.all();
+
+        vm.orderBy = '-date';
     })
     .config(function($stateProvider){
         $stateProvider

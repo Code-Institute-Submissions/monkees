@@ -1,5 +1,11 @@
 <h2>Dates</h2>
-<div ng-repeat="date in dc.dates | orderBy:'-date'">
+<div ng-if="dc.orderBy == '-date'">
+    <button ng-click="dc.orderBy = 'date'">By earliest</button>
+</div>
+<div ng-if="dc.orderBy == 'date'">
+        <button ng-click="dc.orderBy = '-date'">By latest</button>
+</div>
+<div ng-repeat="date in dc.dates | orderBy: dc.orderBy">
     <h2>{{ date.venue }}</h2>
     <p>{{ date.date | date:'dd LLLL yyyy' }}</p>
     <p>{{ date.city }}</p>
