@@ -2,8 +2,10 @@
     'use strict';
 
     angular.module('components.music', [])
-    .controller('MusicController', function(){
+    .controller('MusicController', function(Music){
         var vm = this; // view model
+
+        vm.songs = Music.all();
         
         window.onload = function(){
             alert('This site is a demo so music by the Monkees has not been uploaded. Instead links have been added to Youtube for each song. Enjoy (:');

@@ -25,6 +25,7 @@ module.exports = function(config) {
         './app/services/dates/dates.js',
         './app/services/facts/facts.js',
         './app/services/members/members.js',
+        './app/services/music/music.js',
         './app/components/dates/dates.js',
         './app/components/home/home.js',
         './app/components/music/music.js',
@@ -43,6 +44,7 @@ module.exports = function(config) {
         './app/services/dates/dates.spec.js',
         './app/services/facts/facts.spec.js',
         './app/services/members/members.spec.js',
+        './app/services/music/music.spec.js',
     ],
 
 
