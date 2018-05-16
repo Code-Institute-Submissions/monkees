@@ -2,10 +2,14 @@
     'use strict';
 
     angular.module('components.home', [])
-    .controller('HomeController', function(Facts){
+    .controller('HomeController', function(
+        Facts, Dates, Music, Photos
+    ){
         var vm = this; // view model
 
         vm.randomFact = Facts.randomFact(Facts.all());
+        vm.threeDates = Dates.all();
+        vm.music = Music.all();
     })
     .config(function($stateProvider){
         $stateProvider

@@ -1,0 +1,12 @@
+/* This file should only directly target index.html elements */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* Above mobile screen size: */
+}
