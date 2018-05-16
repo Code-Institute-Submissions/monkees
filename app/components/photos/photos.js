@@ -2,8 +2,10 @@
     'use strict';
 
     angular.module('components.photos', [])
-    .controller('PhotosController', function(){
+    .controller('PhotosController', function(Photos){
         var vm = this; // view model
+
+        vm.photos = Photos.all();
     })
     .config(function($stateProvider){
         $stateProvider

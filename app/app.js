@@ -7,6 +7,7 @@
     'api.facts',
     'api.members',
     'api.music',
+    'api.photos',
     'components.dates',
     'components.home',
     'components.music',
