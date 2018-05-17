@@ -7,13 +7,16 @@
   <meta name="description" content="A project using angularjs with the Monkees as inspiration">
   <meta name="author" content="Daniel Deiana">
 
-  <!-- for surge href="app/" -->
+  <!-- for surge href="app/" and "/" locally -->
   <base href="/">
 
   <title>Monkees</title>
 
+  <!-- styling scripts including font-awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="media.css">
 
@@ -38,16 +41,26 @@
 </head>
 <body ng-app="monkees">
   <header>
-    <h1 id='logo'>Monkees Bandpage</h1>
+    <h1 id='logo'>The Monkees Bandpage</h1>
     <p id='strapline'>Everything Monkee' in one place!</p>
-    <nav>
-      <a ui-sref="home">home</a>
-      <a ui-sref="dates">dates</a>
-      <a ui-sref="music">music</a>
-      <a ui-sref="contact">contact</a>
-      <a ui-sref="about">about</a>
-      <a ui-sref="photos">photos</a>
-    </nav>
+
+    <!-- dropdown menu -->
+    <div>
+      <!-- ng-show showNav starts as false -->
+      <nav id='main-nav' ng-init="showNav = false" ng-show="showNav">
+        <!-- clicking on a link will hide the dropdown menu -->
+        <a ui-sref="home" ng-click="showNav = !showNav">home</a>
+        <a ui-sref="dates" ng-click="showNav = !showNav">dates</a>
+        <a ui-sref="music" ng-click="showNav = !showNav">music</a>
+        <a ui-sref="contact" ng-click="showNav = !showNav">contact</a>
+        <a ui-sref="about" ng-click="showNav = !showNav">about</a>
+        <a ui-sref="photos" ng-click="showNav = !showNav">photos</a>
+      </nav>
+      <div id="nav-button">
+        <!-- toggle showNav -->
+        <i class="fas fa-bars" ng-click="showNav = !showNav"></i>
+      </div>
+    </div>
   </header>
   <div ui-view>
   </div>

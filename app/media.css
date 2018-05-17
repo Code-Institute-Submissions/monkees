@@ -2,12 +2,6 @@
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    body {
-        text-align: center;
-    }
-    img {
-        width: 90%;
-    }
 }
 
 @media only screen and (min-width: 769px) {

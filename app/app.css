@@ -1,8 +1,50 @@
-/* This file should only directly target index.html elements */
+/* ROOT STYLES */
+
+/* ROOT ELEMENT STYLES */
+p {
+    font-size: 5.5rem;
+}
+
+/* Tried to keep to the order the elements load on the page */
+/* BODY */
 body {
-    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 header {
-    border-bottom: 2px solid #A55;
+    background: #A33;
+    color: white;
+     
+}
+/* HEADER ID'S */
+#logo {
+    font-size: 8vw;
+}
+
+#strapline {
+    font-size: 5vw;
+}
+
+/* MAIN NAV STYLES */
+#main-nav {
+    display: flex;
+    flex-direction: column;
+}
+#main-nav a {
+    text-decoration: none;
+    font-size: 6rem;
+    color: white;
+}
+
+#nav-button {
+    font-size: 8rem;
+    text-align: right;
+    margin-right: 10%;
+}
+
+/* ROOT IMAGE STYLES */
+img {
+    width: 90%;
 }
