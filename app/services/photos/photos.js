@@ -16,7 +16,7 @@
                 url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Monkees_Television_special_1969.jpg/220px-Monkees_Television_special_1969.jpg',
             },
             {
-                description: "Davey's not on brief!",
+                description: "Davey's not on message!",
                 url: 'https://images-na.ssl-images-amazon.com/images/I/C1YdDyfno6S._SL1000_.png',
             },
             {
