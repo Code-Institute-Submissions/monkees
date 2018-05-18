@@ -1,12 +1,16 @@
-/* ROOT STYLES */
-
 /* ROOT ELEMENT STYLES */
-p {
-    font-size: 5.5rem;
-}
+/* TEXT SIZES */
+h1 {font-size: 12rem;}
+h2 {font-size: 10rem;}
+h3 {font-size: 8rem;}
+h4 {font-size: 6rem;}
+p {font-size: 5.5rem;}
+a {font-size: 5.5rem;}
+label {font-size: 5.5rem;}
+button {font-size: 5.5rem;}
+figcaption {font-size: 5.5rem;}
+li {font-size: 5.5rem;}
 
-/* Tried to keep to the order the elements load on the page */
-/* BODY */
 body {
     display: flex;
     flex-direction: column;
@@ -16,6 +20,7 @@ body {
 header {
     background: #A33;
     color: white;
+    box-shadow: 5px 10px #888;
      
 }
 /* HEADER ID'S */
@@ -44,7 +49,51 @@ header {
     margin-right: 10%;
 }
 
-/* ROOT IMAGE STYLES */
+/* All elements loaded by Angular within the ui-route div */
+#page-content {
+    margin: 0 2.5%;
+}
+
 img {
     width: 90%;
+}
+
+/* FORM ELEMENTS */
+input {
+    border: 1px solid black;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2px 8px;
+    box-shadow: 0px 10px #888;
+}
+
+input {
+    height: 80px;
+    font-size: 6rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px #888;
+}
+
+/* DATES COMPONENT */
+#a-show-date {
+    margin: 60px 0;
+}
+
+#a-show-date h4 {
+    background: #833;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px #888;
+}
+
+#date-filter {
+    display: flex;
+    flex-direction: column;
 }
