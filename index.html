@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="media.css">
 
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+
   <!--Load angular-->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
@@ -56,12 +59,24 @@
         <a ui-sref="about" ng-click="showNav = !showNav">about</a>
         <a ui-sref="photos" ng-click="showNav = !showNav">photos</a>
       </nav>
-      <div id="nav-button">
-        <!-- toggle showNav -->
-        <i class="fas fa-bars" ng-click="showNav = !showNav"></i>
+      <div id="lower-header-tray">
+        <div id="socials">
+            <a href="https://www.facebook.com/TheMonkees/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/themonkees?lang=en"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/themonkees/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div id="nav-button">
+          <!-- toggle showNav -->
+          <i class="fas fa-bars" ng-click="showNav = !showNav"></i>
+        </div>
       </div>
     </div>
   </header>
+  <div id="sub-heading">
+      <section id='get-a-quote'>
+          <p>The Monkees could be playing at your event! <a href="#contact">Get a quote <i class="fas fa-external-link-alt"></i></a></p>
+      </section>
+  </div>
   <div ui-view id="page-content">
   </div>
 </body>

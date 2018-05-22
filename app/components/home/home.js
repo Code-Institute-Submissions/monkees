@@ -8,8 +8,8 @@
         var vm = this; // view model
 
         vm.randomFact = Facts.randomFact(Facts.all());
-        vm.threeDates = Dates.all();
-        vm.music = Music.all();
+        vm.dates = Dates.all();
+        vm.song = Music.all()[0];
     })
     .config(function($stateProvider){
         $stateProvider

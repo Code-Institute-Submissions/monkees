@@ -1,8 +1,47 @@
-<div id='get-a-quote'>
-    <p>The Monkess could be playing at your event! <a href="#contact">Get a quote</a></p>
-    <img src="https://i.ytimg.com/vi/zbW_-8mlBLY/maxresdefault.jpg">
-</div>
-<div id='a-random-fact'>
-    <p><span>A random fact: </span><span id='the-fact'>{{ hc.randomFact }}</span></p>
-    <p><a href="#about">Find out more </a>about the Monkees and it's members</p>
-</div>
+<main>
+    <div id="intro">
+        <p>
+            <strong>Welcome to the Monkee's website!</strong> Listen to <a href="#music">music</a>, view <a href="dates">show dates</a>,
+            <a href="#about">Learn more</a> about your favourite band or view <a href="#photos">photos</a>. Whatever you
+            need, there's plenty of 'Monkeeing around' to be had!
+        </p>
+    </div>
+</main>
+
+<section id="title-image" class="generic-section">
+    <a href="#photos"><img src="https://i.ytimg.com/vi/zbW_-8mlBLY/maxresdefault.jpg"></a>
+    <a href="#photos">More photos <i class="fas fa-external-link-alt"></i></a>
+</section>
+
+<section id='a-random-fact'>
+    <p><strong><i class="far fa-lightbulb"></i> A random fact: </strong><span>{{ hc.randomFact }}</span></p>
+    <p id="find-out-more"><a href="#about">Find out more <i class="fas fa-external-link-alt"></i></a> about the Monkees and it's members</p>
+</section>
+
+<section id="home-dates" class="generic-section">
+    <h3>Shows</h3>
+    <div id="shows-home-parent">
+        <div ng-repeat="date in hc.dates | limitTo:3 | orderBy:'-date'">
+            <div id="shows-home">
+                <p><strong>{{ date.venue }}</strong></p>
+                <p>{{ date.date | date:'dd LLLL yyyy' }}</p>
+            </div>
+        </div>
+    </div>
+    <a href="#dates">View more? <i class="fas fa-external-link-alt"></i></a>
+</section>
+
+<section id="home-music" class="generic-section">
+    <a href="{{ hc.song.url }}" target="_blank"><h3>{{ hc.song.title }}</h3></a>
+    <audio controls>
+        <source src="" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <p><strong>released: </strong>{{ hc.song.released | date:'LLLL yyyy' }}</p>
+    <p><strong>label: </strong>{{ hc.song.label }}</p>
+    <p><strong>songwriters: </strong>{{ hc.song.songwriters }}</p>
+    <p><strong>producers: </strong>{{ hc.song.producers }}</p>
+    <a href="#music">View more? <i class="fas fa-external-link-alt"></i></a>
+</section>
+
+

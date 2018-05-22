@@ -30,10 +30,11 @@
                     <li>{{ instrument }}</li>    
                 </ul>
             </div>
-            <li>Website</li>
-            <a href="{{ member.website }}">{{ member.website }}</a>
-            <li>Wikipedia</li>
-            <a href="{{ member.wikipedia }}">{{ member.wikipedia }}</a>
+
+            <div ng-if="member.website">
+                <a href="{{ member.website }}" id="member-webpage">{{ member.name }}'s website</a>
+            </div>
+            <a href="{{ member.wikipedia }}" id="member-webpage">{{ member.name }}'s Wikipedia</a>
         </ul>
     </div>
 </section>
