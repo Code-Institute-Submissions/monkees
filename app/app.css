@@ -82,6 +82,7 @@ header {
 #socials a {
     font-size: 8rem;
     color: white;
+    margin: 15px;
 }
 
 /* All elements loaded by Angular within the ui-route div */
@@ -112,11 +113,6 @@ input {
     font-size: 18px;
     line-height: 1.33333;
     border-radius: 6px;
-}
-
-/* Audio element */
-audio {
-    font-size: 32px;
 }
 
 /* Generic classed */
@@ -158,6 +154,10 @@ audio {
     border-bottom: 4px dotted #000;
 }
 
+#home-music h3 {
+    text-transform: capitalize;
+}
+
 /* ---- DATES COMPONENT ---- */
 #a-show-date {
     margin: 60px 0;
@@ -181,4 +181,33 @@ audio {
 /* ---- ABOUT COMPONENT ---- */
 #member-webpage {
     font-size: 4rem;
+}
+
+/* ---- MUSIC COMPONENT ---- */
+#song-detail {
+    margin-top: 20px;
+    text-transform: capitalize;
+    border: 2px solid #A33;
+    border-radius: 30px;
+    box-shadow: #888 0 10px;
+    background: #FDD;
+}
+
+#song-detail h3 {
+    color: #A00;
+    font-size: 7vw;
+}
+
+#song-detail p {
+    font-weight: 400;
+    text-align: left;
+    margin: 50px 0 50px 5%;
+}
+
+#song-detail strong {
+    border: 2px solid #CCC;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: #888 0 6px;
+    background: white;
 }

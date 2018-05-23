@@ -1,13 +1,13 @@
 <h2>Music</h2>
 <label>Search song: <input ng-model="search.title" </label>
-<div ng-repeat="song in mc.songs | filter:search">
-    <a href="{{ song.url }}" target="_blank"><h3>{{ song.title }}</h3></a>
+<div ng-repeat="song in mc.songs | filter:search" id="song-detail">
+    <a href="{{ song.url }}" target="_blank"><h3>{{ song.title }} <i class="fab fa-youtube"></i></h3></a>
     <audio controls>
         <source src="" type="audio/ogg">
         Your browser does not support the audio element.
     </audio>
-    <p><strong>released: </strong>{{ song.released | date:'LLLL yyyy' }}</p>
-    <p><strong>label: </strong>{{ song.label }}</p>
-    <p><strong>songwriters: </strong>{{ song.songwriters }}</p>
-    <p><strong>producers: </strong>{{ song.producers }}</p>
+    <p><strong>Released</strong>     {{ song.released | date:'LLLL yyyy' }}</p>
+    <p><strong>Label</strong>     {{ song.label }}</p>
+    <p><strong>Songwriters</strong>     {{ song.songwriters }}</p>
+    <p><strong>Producers</strong>     {{ song.producers }}</p>
 </div>
