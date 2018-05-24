@@ -1,4 +1,8 @@
-/* ROOT ELEMENT STYLES */
+/* 
+    *
+        ---- ROOT ELEMENT STYLES ----
+    *
+*/
 /* TEXT SIZES */
 h1 {font-size: 12rem;}
 h2 {font-size: 10rem;}
@@ -17,6 +21,35 @@ body {
     text-align: center;
 }
 
+img {
+    width: 90%;
+}
+
+input {
+    border: 1px solid black;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2px 8px;
+    box-shadow: 0px 10px #888;
+}
+
+input {
+    height: 46px;
+    padding: 10px 16px 0;
+    font-size: 18px;
+    line-height: 1.33333;
+    border-radius: 6px;
+}
+
+/* 
+    *
+        ---- HEADER ----
+    *
+*/
+
 header {
     background: #C33;
     color: white;
@@ -24,7 +57,7 @@ header {
     margin-bottom: 40px;
      
 }
-/* HEADER ID'S */
+
 #logo {
     font-family: 'Bubblegum Sans', cursive;
     font-size: 10.5vw;
@@ -49,8 +82,12 @@ header {
     margin: 20px 0;
 }
 
+/* 
+    *
+        ---- MAIN NAV ----
+    *
+*/
 
-/* MAIN NAV STYLES */
 #main-nav {
     display: flex;
     flex-direction: column;
@@ -85,37 +122,21 @@ header {
     margin: 15px;
 }
 
+/* 
+    *
+        ---- UI-ROOT DIV ----
+    *
+*/
 /* All elements loaded by Angular within the ui-route div */
 #page-content {
     margin: 0 2.5%;
 }
 
-img {
-    width: 90%;
-}
-
-/* FORM ELEMENTS */
-input {
-    border: 1px solid black;
-}
-
-button {
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 2px 8px;
-    box-shadow: 0px 10px #888;
-}
-
-
-input {
-    height: 46px;
-    padding: 10px 16px 0;
-    font-size: 18px;
-    line-height: 1.33333;
-    border-radius: 6px;
-}
-
-/* Generic classed */
+/* 
+    *
+        ---- GENERIC SECTION ----
+    *
+*/
 /* for elements with less individual styling */
 .generic-section {
     border: 1px solid #CCC;
@@ -124,6 +145,12 @@ input {
     margin: 10px 0;
     box-shadow: #AAA 0px 5px 5px;
 }
+
+/* 
+    *
+        ---- COMPONENTS ----
+    *
+*/
 
 /* HOME COMPONENT */
 #a-random-fact {
@@ -143,6 +170,7 @@ input {
 #find-out-more, #find-out-more a {
     font-size: 5rem;
 }
+
 
 #shows-home {
     margin: 40px 0;
@@ -210,4 +238,58 @@ input {
     border-radius: 20px;
     box-shadow: #888 0 6px;
     background: white;
+}
+
+/* ---- CONTACT COMPONENT --- */
+#quote-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#quote-form input, #quote-form textarea {
+    font-size: 5rem;
+    border: 3px solid #CCC;
+    border-radius: 10px;
+    box-shadow: #555 0 5px 20px;
+}
+
+#quote-form input {
+    height: 120px;
+    margin: 20px 0;
+}
+
+#quote-form button {
+    font-size: 5rem;
+    text-shadow: black 0px 5px;
+    margin: 20px 0;
+    background: #B00;
+    color: white;
+    border-radius: 20px;
+    box-shadow: #AAA 0px 10px 10px;
+}
+
+/* ---- ABOUT COMPONENT ---- */
+#members img {
+    padding: 30px;
+    border: 3px solid #AAA;
+    box-shadow: #AAA 0px 10px 40px;
+    margin-bottom: 40px;
+}
+
+#members h2 {
+    margin-bottom: -50px;
+}
+
+#member {
+    margin: 100px 0;
+}
+
+#member h3 {
+    background: #B00;
+    color: white;
+    width: 70%;
+    margin: 0 auto 20px auto;
+    border: 3px solid #500;
+    border-radius: 20px;
+    text-shadow: black 0px 5px 5px;
 }

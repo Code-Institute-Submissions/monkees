@@ -17,25 +17,18 @@
     </p>
 </section>
 
-<section>
+<section id="members">
     <h2>Members</h2>
-    <div ng-repeat="member in ac.members">
+    <div ng-repeat="member in ac.members" id="member">
         <h3>{{ member.name }}</h3>
         <img ng-src="{{ member.image }}" alt="A picture of {{ member.name }}">
-        <ul>
-            <li><span>Born: </span>{{ member.born }}</li>
-            <li>Instruments: </li>
-            <div ng-repeat="instrument in member.instruments">
-                <ul>
-                    <li>{{ instrument }}</li>    
-                </ul>
-            </div>
+        <p><strong>Born: </strong>{{ member.born }}</p>
+        <p><strong>Instruments: </strong><span ng-repeat="instrument in member.instruments"> {{ instrument }},</span></p>
 
-            <div ng-if="member.website">
-                <a href="{{ member.website }}" id="member-webpage">{{ member.name }}'s website</a>
-            </div>
-            <a href="{{ member.wikipedia }}" id="member-webpage">{{ member.name }}'s Wikipedia</a>
-        </ul>
+        <div ng-if="member.website">
+            <a href="{{ member.website }}" id="member-webpage">{{ member.name }}'s website</a>
+        </div>
+        <a href="{{ member.wikipedia }}" id="member-webpage">{{ member.name }}'s Wikipedia</a>
     </div>
 </section>
 
