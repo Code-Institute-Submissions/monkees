@@ -23,11 +23,11 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
 
-  <!--Load angular-->
+  <!-- Load angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 
-  <!--Our angular app-->
+  <!-- The angular scripts -->
   <script src="services/dates/dates.js"></script>
   <script src="services/facts/facts.js"></script>
   <script src="services/music/music.js"></script>
@@ -44,9 +44,10 @@
 </head>
 <body ng-app="monkees">
   <header>
-    <h1 id='logo'>The Monkees Bandpage</h1>
-    <p id='strapline'>Everything Monkee' in one place!</p>
-
+    <div id="banner">
+        <h1 id='logo'>The Monkees Bandpage</h1>
+        <p id='strapline'>Everything Monkee' in one place!</p>
+    </div>
     <!-- dropdown menu -->
     <div>
       <!-- ng-show showNav starts as false -->
@@ -59,6 +60,15 @@
         <a ui-sref="about" ng-click="showNav = !showNav">about</a>
         <a ui-sref="photos" ng-click="showNav = !showNav">photos</a>
       </nav>
+      <nav id='desktop-nav'>
+          <!-- clicking on a link will hide the dropdown menu -->
+          <a ui-sref="home">home</a>
+          <a ui-sref="dates">dates</a>
+          <a ui-sref="music">music</a>
+          <a ui-sref="contact">contact</a>
+          <a ui-sref="about">about</a>
+          <a ui-sref="photos">photos</a>
+        </nav>
       <div id="lower-header-tray">
         <div id="socials">
             <a href="https://www.facebook.com/TheMonkees/"><i class="fab fa-facebook"></i></a>
@@ -79,5 +89,19 @@
   </div>
   <div ui-view id="page-content">
   </div>
+  <footer>
+    <nav id="footer-nav">
+        <a ui-sref="home">home</a>
+        <a ui-sref="dates">dates</a>
+        <a ui-sref="music">music</a>
+        <a ui-sref="contact">contact</a>
+        <a ui-sref="about">about</a>
+        <a ui-sref="photos">photos</a>
+    </nav>
+    <script>
+      var currentYear = (new Date()).getFullYear();
+      document.write('<p>&copy; Daniel Deiana ' + currentYear + '</p>');
+    </script>
+  </footer>
 </body>
 </html>

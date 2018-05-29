@@ -4,16 +4,16 @@
     *
 */
 /* TEXT SIZES */
-h1 {font-size: 12rem;}
-h2 {font-size: 10rem;}
-h3 {font-size: 8rem;}
-h4 {font-size: 6rem;}
-p {font-size: 5.5rem;}
-a {font-size: 5.5rem;}
-label {font-size: 5.5rem;}
-button {font-size: 5.5rem;}
-figcaption {font-size: 5.5rem;}
-li {font-size: 5.5rem;}
+h1 {font-size: 12vw;}
+h2 {font-size: 10vw;}
+h3 {font-size: 8vw;}
+h4 {font-size: 6vw;}
+p {font-size: 5.5vw;}
+a {font-size: 5.5vw;}
+label {font-size: 5.5vw;}
+button {font-size: 5.5vw;}
+figcaption {font-size: 5.5vw;}
+li {font-size: 5.5vw;}
 
 body {
     display: flex;
@@ -42,6 +42,15 @@ input {
     font-size: 18px;
     line-height: 1.33333;
     border-radius: 6px;
+}
+
+/* LINK STYLES */
+a {
+    color: navy;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: none;
 }
 
 /* 
@@ -74,6 +83,14 @@ header {
     text-shadow: 2px 4px #500;
 }
 
+#sub-heading {
+    border-top: 1px solid #BBB;
+    border-bottom: 1px solid #AAA;
+    margin: 0 0 60px 0;
+    box-shadow: #AAA 0px 6px 20px;
+    background: #FFD;
+}
+
 #get-a-quote {
     color: #C00;
     font-weight: 700;
@@ -82,12 +99,17 @@ header {
     margin: 20px 0;
 }
 
+#get-a-quote p, #get-a-quote a {
+    font-size: 8vw;
+}
+
 /* 
     *
-        ---- MAIN NAV ----
+        ---- NAV ----
     *
 */
 
+/* MOBILE NAV */
 #main-nav {
     display: flex;
     flex-direction: column;
@@ -97,7 +119,7 @@ header {
 }
 #main-nav a {
     text-decoration: none;
-    font-size: 6rem;
+    font-size: 6vw;
     color: white;
     text-shadow: 0px 4px #000;
     margin: 10px 0;
@@ -107,19 +129,35 @@ header {
     color: #A33;
 }
 
+/* SOCIAL LINKS AND MOBILE NAV BUTTON */
+
 #lower-header-tray {
     display: flex;
 }
 
 #nav-button, #socials {
-    font-size: 8rem;
+    font-size: 5rem;
     margin: 0 auto;
 }
 
 #socials a {
-    font-size: 8rem;
+    font-size: 5rem;
     color: white;
     margin: 15px;
+}
+
+/* DESKTOP NAv */
+#desktop-nav {
+    background: #333;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#desktop-nav a {
+    color: white;
+    font-size: 4vw;
+    margin: 0 10px;
+    text-shadow: #000 0 3px 3px;
 }
 
 /* 
@@ -130,6 +168,25 @@ header {
 /* All elements loaded by Angular within the ui-route div */
 #page-content {
     margin: 0 2.5%;
+}
+
+/* 
+    *
+        ---- FOOTER ----
+    *
+*/
+#footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#footer-nav a {
+    margin: 30px 0;
+}
+
+#footer-nav:first-child {
+    margin-top: 30px;
 }
 
 /* 
@@ -168,7 +225,7 @@ header {
 }
 
 #find-out-more, #find-out-more a {
-    font-size: 5rem;
+    font-size: 5vw;
 }
 
 
