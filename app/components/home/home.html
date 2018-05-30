@@ -1,17 +1,19 @@
-<main>
-    <div id="intro">
-        <p>
-            <strong>Welcome to the Monkee's website!</strong> Listen to <a ui-sref="music">music</a>, view <a ui-sref="dates">show dates</a>,
-            <a ui-sref="about">Learn more</a> about your favourite band or view <a ui-sref="photos">photos</a>. Whatever you
-            need, there's plenty of 'Monkeeing around' to be had!
-        </p>
-    </div>
-</main>
-
-<section id="title-image" class="generic-section">
-    <a href="#photos"><img src="https://i.ytimg.com/vi/zbW_-8mlBLY/maxresdefault.jpg"></a>
-    <a ui-sref="photos">More photos <i class="fas fa-external-link-alt"></i></a>
-</section>
+<div id="first-home-section">
+    <main>
+        <div id="intro">
+            <p>
+                <strong>Welcome to the Monkee's website!</strong> Listen to <a ui-sref="music">music</a>, view <a ui-sref="dates">show dates</a>,
+                <a ui-sref="about">Learn more</a> about your favourite band or view <a ui-sref="photos">photos</a>. Whatever you
+                need, there's plenty of 'Monkeeing around' to be had!
+            </p>
+        </div>
+    </main>
+    
+    <section id="title-image" class="generic-section">
+        <a href="#photos"><img src="https://i.ytimg.com/vi/zbW_-8mlBLY/maxresdefault.jpg"></a></br>
+        <a ui-sref="photos">More photos <i class="fas fa-external-link-alt"></i></a>
+    </section>
+</div>
 
 <section id='a-random-fact'>
     <p><strong><i class="far fa-lightbulb"></i> A random fact: </strong><span>{{ hc.randomFact }}</span></p>

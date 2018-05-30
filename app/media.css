@@ -42,7 +42,7 @@
     }
 
     #get-a-quote p, #get-a-quote a {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
@@ -52,8 +52,45 @@
     }
 }
 
+@media only screen and (min-width: 600px) {
+    #nav-button, #socials a {
+        font-size: 4rem;
+    }
+}
+
 /*
     *
         *   COMPONENTS
     *
 */
+
+/* --- HOME ---*/
+@media only screen and (min-width: 600px) {
+    #intro {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #first-home-section p, #first-home-section a {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #title-image a {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #first-home-section strong {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #first-home-section {
+        display: flex;
+    }
+}
