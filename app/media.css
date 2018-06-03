@@ -26,6 +26,14 @@
     }
 }
 
+@media only screen and (min-width: 500px) {
+    #strapline {
+        margin-bottom: -4%;
+    }
+}
+
+
+
 
 /* -- NAV -- */
 
@@ -60,30 +68,65 @@
 
 /*
     *
+        *   FOOTER NAV
+    *
+*/
+@media only screen and (min-width: 600px) {
+    #footer-nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #footer-nav a {
+        font-size: 3rem;
+    }
+    footer p {
+        font-size: 2rem;
+    }
+}
+
+/*
+    *
         *   COMPONENTS
     *
 */
 
 /* --- HOME ---*/
-@media only screen and (min-width: 600px) {
-    #intro {
-        padding: 0 50px;
+@media only screen and (min-width: 400px){
+    #a-random-fact {
+        padding: 5px 0;
     }
-}
+    #a-random-fact a, #a-random-fact p {
+        font-size: 3rem;   
+    }
 
-@media only screen and (min-width: 600px) {
-    #first-home-section p, #first-home-section a {
+    #home-dates h3 {
+        font-size: 5rem;
+    }
+    #home-dates strong {
+        font-size: 4rem;
+    }
+    #home-dates p {
         font-size: 3rem;
     }
-}
 
-@media only screen and (min-width: 600px) {
-    #title-image a {
+    #song-detail h3 {
+        font-size: 4rem;
+    }
+    #song-detail a {
         font-size: 2rem;
     }
 }
 
 @media only screen and (min-width: 600px) {
+    #intro {
+        padding: 0 50px;
+    }
+    #first-home-section p, #first-home-section a {
+        font-size: 3rem;
+    }
+    #title-image a {
+        font-size: 2rem;
+    }
     #first-home-section strong {
         font-size: 4rem;
     }
