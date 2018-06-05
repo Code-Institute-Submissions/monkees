@@ -137,3 +137,77 @@
         display: flex;
     }
 }
+
+/* ---- DATES ---- */
+@media only screen and (min-width: 600px) {
+    #date-filter h2 {
+        font-size: 6rem;
+    }
+
+    #a-show-date h4 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    #a-show-date p {
+        font-size: 3rem;
+    }
+
+    #date-filter button, #date-filter label {
+        font-size: 3rem;
+    }
+}
+
+/* ---- MUSIC ---- */
+@media only screen and (min-width: 600px) {
+    #music-section h2 {
+        font-size: 6rem;
+    }
+
+    #music-section label, #music-section p {
+        font-size: 3rem;
+    }
+
+    #music-section h3 {
+        font-size: 4rem;
+    }
+
+    #music-section strong {
+        padding: 5px;
+    }
+}
+
+/* ---- ABOUT ---- */
+@media only screen and (min-width: 600px) {
+    #about-the-monkees h2, #members h2 {
+        font-size: 6rem;
+    }
+
+    #about-the-monkees h3, #members h3 {
+        font-size: 4rem;
+    }
+
+    #about-the-monkees p, #members p {
+        font-size: 3rem;
+    }
+
+    #about-the-monkees a, #members a {
+        font-size: 2.8rem;
+    }
+}
+
+/* ---- PHOTOS ---- */
+@media only screen and (min-width: 600px) {
+    #photos h2 {
+        font-size: 6rem;
+    }
+
+    #photos figcaption {
+        font-size: 3rem;
+    }
+
+    #photo {
+        margin-bottom: 60px;
+    }
+}

@@ -188,6 +188,12 @@ header {
         ---- FOOTER ----
     *
 */
+footer {
+    border-top: dotted 2px #AAA;
+    margin-top: 30px;
+
+}
+
 #footer-nav {
     display: flex;
     flex-direction: column;
@@ -268,12 +274,17 @@ header {
     margin: 0 auto;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 0px 10px #888;
+    box-shadow: 0px 5px 10px #888;
 }
 
 #date-filter {
     display: flex;
     flex-direction: column;
+}
+
+#date-filter button {
+    box-shadow: 0px 3px 10px #888;
+    margin: 20px 0 40px 0;
 }
 
 /* ---- ABOUT COMPONENT ---- */
@@ -287,7 +298,7 @@ header {
     text-transform: capitalize;
     border: 2px solid #A33;
     border-radius: 30px;
-    box-shadow: #888 0 10px;
+    box-shadow: #888 0 10px 10px;
     background: #FDD;
 }
 
@@ -306,7 +317,7 @@ header {
     border: 2px solid #CCC;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: #888 0 6px;
+    box-shadow: #888 0 6px 10px;
     background: white;
 }
 

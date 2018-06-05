@@ -1,7 +1,9 @@
-<h2>Photos</h2>
-<div ng-repeat="photo in pc.photos">
-    <figure>
-        <img ng-src="{{ photo.url }}" alt="{{ photo.description }}">    
-        <figcaption>{{ photo.description }}</figcaption>
-    </figure>
-</div>
+<section id="photos">
+    <h2>Photos</h2>
+    <div ng-repeat="photo in pc.photos" id="photo">
+        <figure>
+            <img ng-src="{{ photo.url }}" alt="{{ photo.description }}">    
+            <figcaption>{{ photo.description }}</figcaption>
+        </figure>
+    </div>
+</section>
