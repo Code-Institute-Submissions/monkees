@@ -1,7 +1,6 @@
 
 <section id="about-the-monkees">
     <h2>About the Monkees</h2>
-
     <p>
     The Monkees are a rock/pop group formed in 1965 to compliment an American situation comedy sitcom by the same name.
     Created in Los Angeles, the band at most comprised of four members: Peter Tork, Micky Dolenz, Davy Jones and Michael
@@ -17,7 +16,6 @@
     records worldwide.
     </p>
 </section>
-
 <section id="members">
     <h2>Members</h2>
     <div ng-repeat="member in ac.members" id="member">
@@ -25,7 +23,6 @@
         <img ng-src="{{ member.image }}" alt="A picture of {{ member.name }}">
         <p><strong>Born: </strong>{{ member.born }}</p>
         <p><strong>Instruments: </strong><span ng-repeat="instrument in member.instruments"> {{ instrument }},</span></p>
-
         <div ng-if="member.website">
             <a href="{{ member.website }}" id="member-webpage">{{ member.name }}'s website</a>
         </div>

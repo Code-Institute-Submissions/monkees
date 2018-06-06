@@ -7,40 +7,21 @@
   <meta name="description" content="A project using angularjs with the Monkees as inspiration">
   <meta name="author" content="Daniel Deiana">
 
-  <!-- for surge href="app/" and "/" locally -->
+  <!-- for surge use href="app/" and use "/" locally -->
   <base href="/">
 
   <title>Monkees</title>
 
-  <!-- styling scripts including font-awesome -->
+  <!-- styling scripts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="media.css">
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
-
-  <!-- Load angular -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
-
-  <!-- The angular scripts -->
-  <script src="services/dates/dates.js"></script>
-  <script src="services/facts/facts.js"></script>
-  <script src="services/music/music.js"></script>
-  <script src="services/members/members.js"></script>
-  <script src="services/photos/photos.js"></script>
-  <script src="components/dates/dates.js"></script>
-  <script src="components/home/home.js"></script>
-  <script src="components/music/music.js"></script>
-  <script src="components/contact/contact.js"></script>
-  <script src="components/about/about.js"></script>
-  <script src="components/photos/photos.js"></script>
-  <script src="app.js"></script>
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body ng-app="monkees">
   <header>
@@ -82,12 +63,13 @@
       </nav>
     </div>
   </header>
-  <div id="sub-heading">
-      <section id='get-a-quote'>
+  <section id="sub-heading">
+      <aside id='get-a-quote'>
           <p>The Monkees could be playing at your event! <a ui-sref="contact">Get a quote <i class="fas fa-external-link-alt"></i></a></p>
-      </section>
-  </div>
+      </aside>
+    </section>
   <div ui-view id="page-content">
+    <!-- This is where the component html is loaded -->
   </div>
   <footer>
     <nav id="footer-nav">
@@ -98,6 +80,22 @@
         <a ui-sref="about">about</a>
         <a ui-sref="photos">photos</a>
     </nav>
+    <!-- Load angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <!-- The angular scripts -->
+    <script src="services/dates/dates.js"></script>
+    <script src="services/facts/facts.js"></script>
+    <script src="services/music/music.js"></script>
+    <script src="services/members/members.js"></script>
+    <script src="services/photos/photos.js"></script>
+    <script src="components/dates/dates.js"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/music/music.js"></script>
+    <script src="components/contact/contact.js"></script>
+    <script src="components/about/about.js"></script>
+    <script src="components/photos/photos.js"></script>
+    <script src="app.js"></script>
     <script>
       var currentYear = (new Date()).getFullYear();
       document.write('<p>&copy; Daniel Deiana ' + currentYear + '</p>');

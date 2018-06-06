@@ -8,18 +8,15 @@
             </p>
         </div>
     </main>
-    
     <section id="title-image" class="generic-section">
         <a href="#photos"><img src="https://i.ytimg.com/vi/zbW_-8mlBLY/maxresdefault.jpg"></a></br>
         <a ui-sref="photos">More photos <i class="fas fa-external-link-alt"></i></a>
     </section>
 </div>
-
 <section id='a-random-fact'>
     <p><strong><i class="far fa-lightbulb"></i> A random fact: </strong><span>{{ hc.randomFact }}</span></p>
     <p id="find-out-more"><a ui-sref="about">Find out more <i class="fas fa-external-link-alt"></i></a> about the Monkees and it's members</p>
 </section>
-
 <section id="home-dates" class="generic-section">
     <h3>Shows <i class="far fa-calendar-alt"></i></h3>
     <div id="shows-home-parent">
@@ -32,7 +29,6 @@
     </div>
     <a ui-sref="dates">View more? <i class="fas fa-external-link-alt"></i></a>
 </section>
-
 <section id="song-detail" >
     <a href="{{ hc.song.url }}" target="_blank"><h3>{{ hc.song.title }} <i class="fab fa-youtube"></i></h3></a>
     <audio controls>

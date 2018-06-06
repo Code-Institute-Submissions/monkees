@@ -4,7 +4,6 @@
     *
 */
 
-/* tablets and above */
 @media only screen and (min-width: 601px) {
     p {font-size: 4rem;}
     a {font-size: 4.3rem;}   
@@ -15,7 +14,6 @@
         *   INDEX
     *
 */
-
 /* -- BANNER -- */
 @media only screen and (min-width: 601px) {
     #logo {
@@ -32,11 +30,7 @@
     }
 }
 
-
-
-
 /* -- NAV -- */
-
 /* mobile */
 @media only screen and (max-width: 600px) {
     #desktop-nav {
@@ -48,7 +42,6 @@
     #nav-button, #main-nav {
         display: none;
     }
-
     #get-a-quote p, #get-a-quote a {
         font-size: 3rem;
     }
@@ -89,7 +82,6 @@
         *   COMPONENTS
     *
 */
-
 /* --- HOME ---*/
 @media only screen and (min-width: 400px){
     #a-random-fact {
@@ -98,7 +90,6 @@
     #a-random-fact a, #a-random-fact p {
         font-size: 3rem;   
     }
-
     #home-dates h3 {
         font-size: 5rem;
     }
@@ -108,7 +99,6 @@
     #home-dates p {
         font-size: 3rem;
     }
-
     #song-detail h3 {
         font-size: 4rem;
     }
@@ -143,17 +133,14 @@
     #date-filter h2 {
         font-size: 6rem;
     }
-
     #a-show-date h4 {
         font-size: 4rem;
         margin-bottom: 20px;
         width: 50%;
     }
-
     #a-show-date p {
         font-size: 3rem;
     }
-
     #date-filter button, #date-filter label {
         font-size: 3rem;
     }
@@ -164,15 +151,12 @@
     #music-section h2 {
         font-size: 6rem;
     }
-
     #music-section label, #music-section p {
         font-size: 3rem;
     }
-
     #music-section h3 {
         font-size: 4rem;
     }
-
     #music-section strong {
         padding: 5px;
     }
@@ -183,15 +167,12 @@
     #about-the-monkees h2, #members h2 {
         font-size: 6rem;
     }
-
     #about-the-monkees h3, #members h3 {
         font-size: 4rem;
     }
-
     #about-the-monkees p, #members p {
         font-size: 3rem;
     }
-
     #about-the-monkees a, #members a {
         font-size: 2.8rem;
     }
@@ -202,11 +183,9 @@
     #photos h2 {
         font-size: 6rem;
     }
-
     #photos figcaption {
         font-size: 3rem;
     }
-
     #photo {
         margin-bottom: 60px;
     }
